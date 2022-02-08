@@ -1,4 +1,4 @@
-package com.ssafy.day1.an;
+package com.ssafy.an;
 
 import java.util.Scanner;
 
