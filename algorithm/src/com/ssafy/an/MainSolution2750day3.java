@@ -29,4 +29,5 @@ public class MainSolution2750day3 { // 2750번 수 정렬하기 기초
 
 		sc.close();
 	}
+
 }

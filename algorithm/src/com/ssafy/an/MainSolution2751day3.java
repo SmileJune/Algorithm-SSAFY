@@ -7,6 +7,7 @@ import java.util.Collections;
 
 public class MainSolution2751day3 { // 2751번 수 정렬하기2 기초
 	public static void main(String[] args) throws Exception {
+
 	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		
@@ -21,8 +22,11 @@ public class MainSolution2751day3 { // 2751번 수 정렬하기2 기초
 		Collections.sort(list);
 		
 		for(int value : list) {
+
 			sb.append(value).append('\n');
 		}
 		System.out.println(sb);
 	}
+
 }
+
