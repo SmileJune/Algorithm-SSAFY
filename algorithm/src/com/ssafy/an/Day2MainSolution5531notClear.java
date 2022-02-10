@@ -3,7 +3,7 @@ package com.ssafy.an;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class MainSolution5531day2notClear { // 4년전 문제인데, 자바로 맞은사람이 없는 문제... 1/3이 시간초과...나도...
+public class Day2MainSolution5531notClear { // 4년전 문제인데, 자바로 맞은사람이 없는 문제... 1/3이 시간초과...나도...
 	public static void main(String[] args) throws Exception{ // 5531 버블 정렬
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());

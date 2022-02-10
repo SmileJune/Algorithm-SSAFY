@@ -3,7 +3,7 @@ package com.ssafy.an;
 
 import java.util.Scanner;
 
-public class MainSolution18108day1 { // 18108 날먹...
+public class Day1MainSolution18108 { // 18108 날먹...
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 		int y = Integer.parseInt(sc.nextLine());

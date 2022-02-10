@@ -3,7 +3,7 @@ package com.ssafy.an;
 
 import java.util.Scanner;
 
-public class MainSolution13015 { // 13015 별찍기
+public class Day1MainSolution13015 { // 13015 별찍기
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();

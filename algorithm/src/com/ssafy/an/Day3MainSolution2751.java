@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MainSolution2751day3 { // 2751번 수 정렬하기2 기초
+public class Day3MainSolution2751 { // 2751번 수 정렬하기2 기초
 	public static void main(String[] args) throws Exception {
 
 	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
