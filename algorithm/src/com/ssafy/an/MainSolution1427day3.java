@@ -14,7 +14,8 @@ public class MainSolution1427day3 { // 1427
 		}
 		Arrays.sort(num);
 		for (int i = 0; i < num.length; i++) {
-			System.out.print(num[num.length-1-i]);
+			System.out.print(num[num.length - 1 - i]);
 		}
+		sc.close();
 	}
 }
