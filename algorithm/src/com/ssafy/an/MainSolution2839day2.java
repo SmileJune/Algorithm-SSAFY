@@ -1,8 +1,8 @@
-package com.ssafy.an.day2;
+package com.ssafy.an;
 
 import java.util.Scanner;
 
-public class MainSolution2839 {
+public class MainSolution2839day2 {
 	public static void main(String[] args) {// 2839 설탕배달, 브론즈 1
 		Scanner sc = new Scanner(System.in); // 완전탐색으로 실행 
 		int bag5 = 5;
