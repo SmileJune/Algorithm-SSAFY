@@ -1,10 +1,10 @@
-package com.ssafy.an.day2;
+package com.ssafy.an;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class MainSolution2309specialJudge {
+public class MainSolution2309day2specialJudge {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		;
