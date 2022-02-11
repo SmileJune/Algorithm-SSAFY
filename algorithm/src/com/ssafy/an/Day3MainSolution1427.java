@@ -3,7 +3,7 @@ package com.ssafy.an;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MainSolution1427day3 { // 1427
+public class Day3MainSolution1427 { // 1427
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();

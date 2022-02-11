@@ -2,7 +2,7 @@ package com.ssafy.an;
 
 import java.util.Scanner;
 
-public class MainSolution2750day3 { // 2750번 수 정렬하기 기초
+public class Day3MainSolution2750 { // 2750번 수 정렬하기 기초
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
