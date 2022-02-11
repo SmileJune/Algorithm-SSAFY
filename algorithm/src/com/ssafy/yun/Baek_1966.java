@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Beak_1966 {
+public class Baek_1966 {
 
 	public static Scanner sc = new Scanner(System.in);
 
