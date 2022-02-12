@@ -1,8 +1,8 @@
-package com.company;
+package com.ssafy.hong;
 
 import java.util.Scanner;
 
-public class Boj {
+public class Boj3687 {
     static String[] dp;
     static int[] num = {0,0,1,7,4,2,0,8};
 

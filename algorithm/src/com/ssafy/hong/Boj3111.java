@@ -1,4 +1,4 @@
-package com.company;
+package com.ssafy.hong;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
