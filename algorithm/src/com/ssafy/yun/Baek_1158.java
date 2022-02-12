@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Beakjoon_1158 {
+public class Baek_1158 {
 
 	public static boolean[] visited;
 	public static List<Integer> list = new ArrayList<>();
