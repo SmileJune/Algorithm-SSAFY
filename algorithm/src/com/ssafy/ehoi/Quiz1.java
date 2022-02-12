@@ -1,4 +1,4 @@
-package com.ssafy.day0.ehoi;
+package com.ssafy.ehoi;
 
 public class Quiz1 {
 	public static void main(String[] args) {

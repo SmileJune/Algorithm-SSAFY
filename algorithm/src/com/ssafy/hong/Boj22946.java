@@ -1,4 +1,4 @@
-package com.company;
+package com.ssafy.hong;
 
 import java.util.ArrayList;
 import java.util.List;
