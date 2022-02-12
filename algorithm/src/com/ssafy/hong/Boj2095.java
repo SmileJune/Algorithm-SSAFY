@@ -1,10 +1,10 @@
-package com.company;
+package com.ssafy.hong;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Boj {
+public class Boj2095 {
     /**
      * [BOJ: 2094] 강수량
      * "X년도에는 Y년도 이후 가장 많은 비가 내렸다"를 만족하기 위한 조건

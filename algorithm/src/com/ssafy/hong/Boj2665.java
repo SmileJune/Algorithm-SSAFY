@@ -1,10 +1,10 @@
-package com.company;
+package com.ssafy.hong;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Boj2565 {
+public class Boj2665 {
     /**
      * [BOJ: 2565] 전깃줄
      * 전봇대 A와 B사이에 전깃줄을 추가하다보니 서로 교차함.

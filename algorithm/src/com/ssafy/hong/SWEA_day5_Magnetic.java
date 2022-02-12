@@ -1,9 +1,11 @@
+package com.ssafy.hong;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Solution {
+public class SWEA_day5_Magnetic {
     static int[][] map;
     static int N;
     public static void main(String[] args){
