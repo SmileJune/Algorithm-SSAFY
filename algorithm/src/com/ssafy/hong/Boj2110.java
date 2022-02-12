@@ -7,7 +7,20 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Boj2110 {
-
+	
+    /**
+     * [BOj: 2110] 공유기 설치
+     * N개의 집 수직선 위에 있다.
+     * 공유기 C개를 설치하려고 한다.
+     * 최대한 많은 곳에서 와이파이 사용하기 위해서 인접한 공유기 사이의 거리를
+     * 최대로 할때, 이 거리는?
+     * input:   N C 집 수, 공유기 수
+     *          a1  집 위치
+     *          ..
+     * output:  ans 인접한 두 공유기 사이 최대 거리
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args)throws IOException {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
