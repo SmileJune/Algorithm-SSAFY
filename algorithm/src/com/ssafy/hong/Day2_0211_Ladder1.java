@@ -1,3 +1,5 @@
+package com.ssafy.hong;
+
 import java.util.*;
 
 public class Day2_0211_Ladder1 {
