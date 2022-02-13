@@ -1,8 +1,8 @@
-package com.company;
+package com.ssafy.hong;
 
 import java.util.Scanner;
 
-public class Test2 {
+public class Boj1695{
 
     /**
      * [BOJ: 1695] 팰린드롬 만들기
