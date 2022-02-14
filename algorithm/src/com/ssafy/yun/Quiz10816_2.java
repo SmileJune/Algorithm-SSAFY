@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Quiz10816_2 {  //upper, lower bound 더 공부하고 다시 풀어보자.
+public class Quiz10816_2 { // upper, lower bound 더 공부하고 다시 풀어보자.
 
 	public static int[] myArr;
 	public static int[] yourArr;
@@ -45,15 +45,14 @@ public class Quiz10816_2 {  //upper, lower bound 더 공부하고 다시 풀어�
 	}
 
 	public static int upperbound(int target) {
-		int left = 0;
+		int left = -1;
 		int right = myArr.length;
-		int mid;
-		while (left < right) {
-			mid = (left + right) / 2;
+		while (left + 1 <= right) {
+			int mid = (left + right) / 2;
 			if (myArr[mid] > target) {
-				right = mid - 1;
+				right = mid-1;
 			} else {
-				left = mid;
+				left = mid + 1;
 			}
 		}
 
@@ -62,14 +61,14 @@ public class Quiz10816_2 {  //upper, lower bound 더 공부하고 다시 풀어�
 
 	public static int lowerbound(int target) {
 		int left = 0;
-		int right = myArr.length;
+		int right = myArr.length + 1;
 		int mid;
-		while (left < right) {
+		while (left <= right) {
 			mid = (left + right) / 2;
 			if (myArr[mid] >= target) {
-				right = mid;
+				right = mid-1;
 			} else {
-				left = mid + 1;
+				left = mid+1;
 			}
 		}
 		return right;
