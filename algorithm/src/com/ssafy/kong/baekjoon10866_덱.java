@@ -1,4 +1,4 @@
-package com.ssafy.kong;
+package com.ssafy.algorithm;
 
 import java.io.BufferedReader;
 import java.io.IOException;

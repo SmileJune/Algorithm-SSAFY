@@ -1,3 +1,4 @@
+<<<<<<< HEAD:algorithm/src/com/ssafy/kong/baekjoon11650_좌표정렬하기.java
 package com.ssafy.kong;
 
 import java.io.BufferedReader;
@@ -43,3 +44,5 @@ public class baekjoon11650_좌표정렬하기 {
 		System.out.print(sb);
 	}
 }
+=======
+>>>>>>> parent of 9be78b5 (feat):algorithm/src/com/ssafy/kong/baekjoon11659_좌표정렬하기.java
