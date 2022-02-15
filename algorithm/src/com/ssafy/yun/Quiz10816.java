@@ -23,9 +23,8 @@ public class Quiz10816 { //기본 이분 탐색으로 인덱스 구하고 양옆
 		}
 
 		int yourArrLength = Integer.parseInt(br.readLine());
-
-		yourArr = new int[yourArrLength];
 		st = new StringTokenizer(br.readLine());
+		yourArr = new int[yourArrLength];
 		for (int i = 0; i < yourArr.length; i++) {
 			yourArr[i] = Integer.parseInt(st.nextToken());
 		}

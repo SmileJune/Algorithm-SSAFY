@@ -1,6 +1,5 @@
 package com.ssafy.an;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Day3MainSolution11399 { // 11399 ATM
@@ -14,7 +13,15 @@ public class Day3MainSolution11399 { // 11399 ATM
 		}
 		sc.nextLine();
 
-		Arrays.sort(arr);
+		for (int i = num - 1; i >= 0; i--) {
+			for (int j = 0; j < i; j++) {
+				if (arr[j] > arr[j + 1]) {
+					int tmp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = tmp;
+				}
+			}
+		} // bubble, tc가 온화해서 n^2복잡도로도 가능
 
 		int sum = 0;
 		for (int i = 0; i < num; i++) {
