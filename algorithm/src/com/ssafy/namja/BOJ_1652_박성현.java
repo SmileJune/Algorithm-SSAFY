@@ -1,4 +1,4 @@
-package com.ssafy.hyeon;
+package com.ssafy.namja;
 
 import java.util.Scanner;
 

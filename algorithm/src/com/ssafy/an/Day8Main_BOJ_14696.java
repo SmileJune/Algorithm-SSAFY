@@ -7,8 +7,8 @@ import java.util.StringTokenizer;
 
 public class Day8Main_BOJ_14696 { // 14696
 	public static void main(String[] args) throws Exception {
-//		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("data/an/input14696.txt")));
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("data/an/input14696.txt")));
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st = null;
 		int N = Integer.parseInt(br.readLine());
@@ -17,16 +17,16 @@ public class Day8Main_BOJ_14696 { // 14696
 
 			st = new StringTokenizer(br.readLine());
 			int[] a = new int[5];
-			int acnt = Integer.parseInt(st.nextToken());
+			Integer.parseInt(st.nextToken()); // 횟수 미사용
 			while (st.hasMoreTokens())
 				a[Integer.parseInt(st.nextToken())]++;
 
 			st = new StringTokenizer(br.readLine());
 			int[] b = new int[5];
-			int bcnt = Integer.parseInt(st.nextToken());
+			Integer.parseInt(st.nextToken()); // 횟수 미사용
 			while (st.hasMoreTokens())
 				b[Integer.parseInt(st.nextToken())]++;
-
+		
 			if (a[4] == b[4]) {
 				for (int n = 3; n >= 0; n--) {
 					if (a[n] == b[n]) // continue로 최종 조건 맞추기
@@ -39,5 +39,6 @@ public class Day8Main_BOJ_14696 { // 14696
 			sb.append(ans).append("\n");
 		}
 		System.out.println(sb);
+		br.close();
 	}
 }
