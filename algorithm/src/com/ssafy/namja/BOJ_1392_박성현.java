@@ -1,4 +1,4 @@
-package com.ssafy.hyeon;
+package com.ssafy.namja;
 
 import java.util.Scanner;
 
@@ -31,5 +31,7 @@ public class BOJ_1392_박성현 {
 		}
 		for (int i : arr2)
 			System.out.println(i);
+		
+		sc.close();
 	}
 }
