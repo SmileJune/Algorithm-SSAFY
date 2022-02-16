@@ -31,5 +31,7 @@ public class BOJ_1392_박성현 {
 		}
 		for (int i : arr2)
 			System.out.println(i);
+		
+		sc.close();
 	}
 }
