@@ -1,9 +1,9 @@
-package com.ssafy.algorithm;
+package com.ssafy.kong;
 
 import java.io.BufferedReader; 
 import java.io.InputStreamReader; 
 import java.util.Stack; 
-public class backjoon1406_에디터stack { 
+public class baekjoon1406_에디터stack { 
 	public static void main(String[] args) throws Exception { 
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		String str = bf.readLine(); 
