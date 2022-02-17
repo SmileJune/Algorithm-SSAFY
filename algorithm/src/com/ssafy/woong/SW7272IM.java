@@ -12,32 +12,30 @@ public class SW7272IM {
 		
 		int T = Integer.parseInt(br.readLine());
 		for(int i = 1; i <= T; i++) {
-			System.out.printf("#%d %d\n",i,solution());
+			System.out.printf("#%d %s\n",i,solution());
 		}
 	}
 	
-	static int solution() throws NumberFormatException, IOException {
+	static String solution() throws NumberFormatException, IOException {
 		
-		String set1 = "CEFGHIJKLMNSTUVWXYZ";
-		String set2 = "ADOPQR";
-		
+		String[] group = {"B","CEFGHIJKLMNSTUVWXYZ","ADOPQR"};
 		st = new StringTokenizer(br.readLine());
 		
 		String s1 = st.nextToken();
 		String s2 = st.nextToken();
 		
-		for(int i = 0 ; i < s1.length(); i++) {
-			if(set1.contains(s1.substring(0, i+1))) {
-				s1.replace("")
+		if(s1.length() == s2.length()) {
+			
+			outer: for(int i = 0; i < s1.length(); i++) {
+				for(int j = 0; j < 3; j++) {
+					if(group[j].contains(String.valueOf(s1.charAt(i))) && group[j].contains(String.valueOf(s2.charAt(i)))){
+						continue outer;
+					}
+				}
+				return "DIFF";
 			}
-		}
-		
-		for(int i = 0 ; i < 26; i++) {
-			if(!check[i]) {
-				return i;
-			}
-		}
-		return 26;
+		return "SAME";
+		}return "DIFF";
 		
 		
 	}
