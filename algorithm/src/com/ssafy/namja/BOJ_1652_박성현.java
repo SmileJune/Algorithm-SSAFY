@@ -37,5 +37,6 @@ public class BOJ_1652_박성현 {
 			}
 		}
 		System.out.printf("%d %d",verCnt, horCnt);
+		sc.close();
 	}
 }
