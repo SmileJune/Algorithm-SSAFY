@@ -10,8 +10,6 @@ package com.ssafy.hwang;
 import java.util.Scanner;
 import java.util.Stack;
 
-import javax.swing.plaf.synth.SynthSeparatorUI;
-
 public class Day10_BOJ10828_스택 {
 	static Stack<Integer> s = new Stack<>();
 	static StringBuilder sb = new StringBuilder();
