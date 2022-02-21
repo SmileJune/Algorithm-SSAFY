@@ -18,5 +18,6 @@ public class Day11_BOJ_2810 {// 2810
 			}
 		} // 컵의 최대 갯수는 사람 수를 넘지 않는다!!!!!
 		System.out.println(cnt <= T ? cnt : T);
+		sc.close();
 	}
 }
