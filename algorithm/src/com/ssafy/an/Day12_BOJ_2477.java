@@ -6,7 +6,6 @@ public class Day12_BOJ_2477 { // 2477
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = Integer.parseInt(sc.nextLine());
-		int ans = 0;
 		int[][] arr = new int[6][2];
 		for (int i = 0; i < 6; i++) {
 			for (int j = 0; j < 2; j++) {
