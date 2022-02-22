@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Day8Main_BOJ_10825Fail { // 10825 그냥 순회로는 무조건 시간초과...
+public class Day8_BOJ_10825Fail { // 10825 그냥 순회로는 무조건 시간초과...
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(
 				new FileInputStream("C:/SSAFY/study_workspace/algorithm/src/com/ssafy/an/data/input10825.txt")));
