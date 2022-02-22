@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Day8Main_BOJ_14696 { // 14696
+public class Day8_BOJ_14696 { // 14696
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("data/an/input14696.txt")));
 //		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

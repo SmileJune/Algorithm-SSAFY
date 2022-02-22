@@ -3,7 +3,7 @@ package com.ssafy.an;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Day8Main_BOJ_17413 { // 17413번 글자 뒤집기 2
+public class Day8_BOJ_17413 { // 17413번 글자 뒤집기 2
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
