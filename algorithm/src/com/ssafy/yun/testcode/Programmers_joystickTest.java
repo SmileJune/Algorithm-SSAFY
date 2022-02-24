@@ -17,20 +17,20 @@ class Programmers_joystickTest {
 		q = new Programmers_joystick();
 	}
 
-	@Test
+	@SWEA_7272
 	void test1() {
 		assertEquals(23, q.solution("JAN"));
 	}
-	@Test
+	@SWEA_7272
 	void test2() {
 		assertEquals(56, q.solution("JEROEN"));
 	}
 	
-	@Test
+	@SWEA_7272
 	void test3() {
 		assertEquals(0, q.solution("A"));
 	}
-	@Test
+	@SWEA_7272
 	void test4() {
 		assertEquals(1, q.solution("AB"));
 	}
