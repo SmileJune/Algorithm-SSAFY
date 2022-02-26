@@ -17,7 +17,7 @@ public class SWEA_4698_2 {
 
 	static void setIsNotPrime() {
 		isNotPrime[0] = isNotPrime[1] = true;
-		for (int i = 2; i * i <= isNotPrime.length; i++) {
+		for (int i = 2; i <= Math.sqrt(isNotPrime.length); i++) {
 			if (isNotPrime[i] == false) {
 				for (int j = i * i; j < isNotPrime.length; j += i) {
 					isNotPrime[j] = true;
