@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class Day17BOJ3190 { // 3190 뱀(큐, 맵)
+public class Day17BOJ3190뱀SW역량기출 { // 3190 뱀(큐, 맵)
 	static int[][] arr;
 	static List<int[]> snake;
 	static int idx, jdx;
@@ -19,7 +19,6 @@ public class Day17BOJ3190 { // 3190 뱀(큐, 맵)
 		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("data/an/input3190.txt")));
 		StringTokenizer st;
 		int N = Integer.parseInt(br.readLine());
-		char[] tmp;
 		snake = new LinkedList<>();
 		arr = new int[N + 2][N + 2];
 		for (int i = 0; i < N + 2; i++) {
