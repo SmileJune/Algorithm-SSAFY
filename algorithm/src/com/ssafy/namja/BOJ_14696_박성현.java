@@ -29,18 +29,18 @@ public class BOJ_14696_박성현 {
 			for (int j = 0; j < b; j++)
 				bDdak[sc.nextInt() - 1]++;
 
-			boolean flag = true;
+			boolean flag = true;	// 무승부나올 경우를 위한 boolean 변수
 			for (int j = 3; j >= 0; j--) {
-				if (aDdak[j] == bDdak[j])
+				if (aDdak[j] == bDdak[j])	
 					continue;
-				else if (aDdak[j] > bDdak[j])
+				else if (aDdak[j] > bDdak[j]) 	// a가 이기면 결과에 A 추가
 					shobu[i] = 'A';
-				else
+				else							// b가 이기면 결과에 B 추가
 					shobu[i] = 'B';
-				flag = false;
+				flag = false;					// 승부가 나면 변수 변경
 				break;
 			}
-			if (flag)
+			if (flag)							// 무승부
 				shobu[i] = 'D';
 		}
 		for (int i = 0; i < N; i++)
