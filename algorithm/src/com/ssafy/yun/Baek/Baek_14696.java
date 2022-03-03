@@ -1,4 +1,4 @@
-package com.ssafy.yun;
+package com.ssafy.yun.Baek;
 
 import java.util.Arrays;
 import java.util.Collections;

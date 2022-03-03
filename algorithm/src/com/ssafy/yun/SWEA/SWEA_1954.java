@@ -1,4 +1,4 @@
-package com.ssafy.yun;
+package com.ssafy.yun.SWEA;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

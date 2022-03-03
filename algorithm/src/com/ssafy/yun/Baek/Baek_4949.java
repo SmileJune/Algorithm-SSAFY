@@ -1,4 +1,4 @@
-package com.ssafy.yun;
+package com.ssafy.yun.Baek;
 
 import java.util.Scanner;
 import java.util.Stack;

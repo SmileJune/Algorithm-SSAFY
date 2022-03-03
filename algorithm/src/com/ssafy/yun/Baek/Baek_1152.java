@@ -1,4 +1,4 @@
-package com.ssafy.yun;
+package com.ssafy.yun.Baek;
 
 import java.io.BufferedReader;
 import java.io.IOException;
