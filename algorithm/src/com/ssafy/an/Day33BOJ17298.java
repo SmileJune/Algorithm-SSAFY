@@ -10,7 +10,7 @@ public class Day33BOJ17298 { // 17298 오큰수 스택
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Stack<Integer> stack = new Stack<>();
-		int N = Integer.parseInt(br.readLine());
+		int N = Integer.parseInt(br.readLine()); 
 		int[] arr = new int[N];
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int idx = 0;
