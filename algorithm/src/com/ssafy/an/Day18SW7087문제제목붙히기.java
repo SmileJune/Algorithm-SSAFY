@@ -1,7 +1,6 @@
 package com.ssafy.an;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
 public class Day18SW7087문제제목붙히기 { // 7087 문제 제목 붙이기
