@@ -6,7 +6,7 @@ public class Day36BOJ4673셀프넘버함수만들기 { // 4673 셀프 넘버
 		for (int i = 1; i <= 10000; i++)
 			if (d(i) < 10001)
 				d[d(i)] = true;
-		for (int i = 1; i <= 10000; i++)
+		for (int i = 1; i <= 10000; i++) 
 			if (!d[i])
 				System.out.println(i);
 	}

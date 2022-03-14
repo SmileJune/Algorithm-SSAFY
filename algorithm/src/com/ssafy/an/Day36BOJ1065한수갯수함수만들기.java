@@ -3,7 +3,7 @@ package com.ssafy.an;
 import java.util.Scanner;
 
 public class Day36BOJ1065한수갯수함수만들기 { // 1065 한수
-	public static void main(String[] args) {
+	public static void main(String[] args) {   
 		Scanner sc = new Scanner(System.in);
 		System.out.println(cal(sc.nextInt()));
 		sc.close();
