@@ -7,6 +7,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Day25BOJ3078좋은친구 { // 3078
+	static Queue<Integer>[] q; 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
@@ -15,7 +16,7 @@ public class Day25BOJ3078좋은친구 { // 3078
 		int K = Integer.parseInt(st.nextToken());
 		long ans = 0;
 
-		Queue<Integer>[] q = new Queue[21];
+		q = new Queue[21];
 
 		for (int i = 0; i <= 20; i++) {
 			q[i] = new LinkedList<>();
