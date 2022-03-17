@@ -22,7 +22,7 @@ public class BOJ_14235_박성현 {
 		for (int i = 0; i < N; i++) { 
 			st = new StringTokenizer(br.readLine());
 			int a = Integer.parseInt(st.nextToken());
-			if (a > 0) {
+			if (a > 0) { 
 				for (int j = 0; j < a; j++)
 					push(Integer.parseInt(st.nextToken()));
 			} else if (a == 0) {
