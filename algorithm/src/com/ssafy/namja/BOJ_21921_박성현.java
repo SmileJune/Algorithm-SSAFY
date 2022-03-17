@@ -3,7 +3,7 @@ package com.ssafy.namja;
 import java.util.Scanner;
 
 public class BOJ_21921_박성현 {
-	// 원형 큐로 푸는 문제
+	// 원형 큐로 푸는 문제 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
