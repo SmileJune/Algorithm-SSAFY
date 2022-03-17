@@ -32,7 +32,7 @@ public class BOJ_3985_박성현 {
 				max_ex = i;
 			}
 		}
-		
+		 
 		for (int i = 0; i <= L; i++) {
 			if (lenArr[i] == 0)
 				continue;
