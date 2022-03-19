@@ -2,7 +2,8 @@ package com.ssafy.namja;
 
 import java.util.Scanner;
 
-public class Main {
+
+public class BOJ_2075_박성현 {
     static int[] heap;
     static int n;
     public static void main(String[] args) {
