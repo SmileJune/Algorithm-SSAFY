@@ -33,9 +33,9 @@ public class BOJ_2075_박성현 {
 	}
 	static int pop() {
 		int first, temp, parent, child;
+		
 		first = heap[1];
 		temp = heap[n--];
-		
 		parent = 1;
 		child = 2;
 		
