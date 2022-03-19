@@ -16,6 +16,7 @@ public class BOJ_5545_박성현 {
 		for (int i = 0; i < N; i++) {
 			top[i] = sc.nextInt();	// Di : 토핑의 열량
 		}
+		
 		Arrays.sort(top);
 		for (int i : top)
 			System.out.print(i + " ");
