@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BOJ_5545_박성현 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		// 최고의 피자 : 가게에서 주문 가능한 피자 중 1원당 열량이 가장 높은 피자
 		
 		int N = sc.nextInt();	// 토핑의 종류의 수
