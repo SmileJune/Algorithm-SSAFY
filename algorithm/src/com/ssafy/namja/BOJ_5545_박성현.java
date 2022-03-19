@@ -18,6 +18,7 @@ public class BOJ_5545_박성현 {
 		}
 		
 		Arrays.sort(top);
+		
 		for (int i : top)
 			System.out.print(i + " ");
 		int price = A;
