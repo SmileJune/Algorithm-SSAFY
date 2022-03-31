@@ -1,5 +1,6 @@
 package com.ssafy.yun.Baek;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Baek_1991 {
@@ -7,78 +8,58 @@ public class Baek_1991 {
 	// 문자를 숫자로 아스키 코드로 표현 해봐야겠다.
 	// 'A' 65 -> 1 (-64)
 	static Scanner sc = new Scanner(System.in);
-	static Node[] arr;
-
-	static class Node {
-		int left;
-		int right;
-	}
+	static int[][] arr;
 
 	public static void main(String[] args) {
-		int n = sc.nextInt();
+		int N = sc.nextInt();
 		sc.nextLine();
-		arr = new Node[n + 2];
-		// 배열 초기화
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = new Node();
-		}
-		for (int i = 1; i <= n; i++) {
+		arr = new int[N + 1][2];
+
+		for (int i = 1; i <= N; i++) {
 			String str = sc.nextLine();
 			int idx = str.charAt(0) - 'A' + 1;
-			char first = str.charAt(2);
-			char second = str.charAt(4);
-
-			// 왼쪽
-			if (first != '.') {
-				arr[idx].left = first - 'A' + 1;
+			if (str.charAt(2) != '.') {
+				arr[idx][0] = str.charAt(2) - 'A' + 1;
 			}
-			// 오른쪽
-			if (second != '.') {
-				arr[idx].right = second - 'A' + 1;
+			if (str.charAt(4) != '.') {
+				arr[idx][1] = str.charAt(4) - 'A' + 1;
 			}
-			preOrder(1);
-			System.out.println();
-			inOrder(1);
-			System.out.println();
-			postOrder(1);
-			System.out.println();
+
 		}
+		preorder(1);
+		System.out.println();
+		inorder(1);
+		System.out.println();
+		postorder(1);
+		System.out.println();
+		
 	}
 
-	static void preOrder(int idx) {
-		System.out.print((char) (idx + 64));
-		if (arr[idx].left == 0) {
-			return;
+	static void preorder(int idx) {
+		System.out.print((char)(idx+'A'-1));
+		if (arr[idx][0] != 0) {
+			preorder(arr[idx][0]);
 		}
-		preOrder(arr[idx].left);
-		if (arr[idx].left == 0) {
-			return;
+		if (arr[idx][1] != 0) {
+			preorder(arr[idx][1]);
 		}
-		preOrder(arr[idx].right);
-
 	}
-
-	static void inOrder(int idx) {
-		if (arr[idx].left == 0) {
-			return;
+	static void inorder(int idx) {
+		if (arr[idx][0] != 0) {
+			inorder(arr[idx][0]);
 		}
-		System.out.print((char) (idx + 64));
-		inOrder(arr[idx].left);
-		if (arr[idx].left == 0) {
-			return;
+		System.out.print((char)(idx+'A'-1));
+		if (arr[idx][1] != 0) {
+			inorder(arr[idx][1]);
 		}
-		inOrder(arr[idx].right);
 	}
-
-	static void postOrder(int idx) {
-		if (arr[idx].left == 0) {
-			return;
+	static void postorder(int idx) {
+		if (arr[idx][0] != 0) {
+			postorder(arr[idx][0]);
 		}
-		postOrder(arr[idx].left);
-		if (arr[idx].left == 0) {
-			return;
+		if (arr[idx][1] != 0) {
+			postorder(arr[idx][1]);
 		}
-		postOrder(arr[idx].right);
-		System.out.print((char) (idx + 64));
+		System.out.print((char)(idx+'A'-1));
 	}
 }
