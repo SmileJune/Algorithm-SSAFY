@@ -18,7 +18,7 @@ public class Baek_2581 {
 		notPrime[0] = true;
 		notPrime[1] = true;
 
-		for (int i = 2; i <= 8; i++) {
+		for (int i = 2; i*i <= N ; i++) {
 			// 체크 됐을 때 패스
 			if (notPrime[i] == true) {
 				continue;
