@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class BOJ15654N과M5순열 { // 15654
+public class Day57BOJ15654N과M5순열 { // 15654
 	static int N, M;
 	static int[] arr, sel;
 	static StringBuilder sb;
