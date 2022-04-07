@@ -2,7 +2,7 @@ package com.ssafy.hwang;
 
 import java.util.Scanner;
 
-public class BOJ_쿼드트리 {
+public class Day58_BOJ_쿼드트리 {
 	static char[][] map;
 	static StringBuilder sb;
 	static char check;
