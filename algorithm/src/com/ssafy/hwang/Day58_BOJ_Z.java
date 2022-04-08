@@ -2,7 +2,7 @@ package com.ssafy.hwang;
 
 import java.util.Scanner;
 
-public class Day58_BOJ_Z {
+public class BOJ_Z {
 	static int cnt, R, C;
 
 	public static void main(String[] args) {
