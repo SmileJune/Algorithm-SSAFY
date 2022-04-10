@@ -24,7 +24,7 @@ public class Day61BOJ9461파도반수열재귀 { // 9461 파도반의 수열
 	}
 
 	private static long padovan(int n) {
-		if (arr[n] == -1)
+		if (arr[n] == -1) // 0으로 둬도 큰 차이는 없다.
 			arr[n] = padovan(n - 2) + padovan(n - 3);
 		return arr[n];
 	}
