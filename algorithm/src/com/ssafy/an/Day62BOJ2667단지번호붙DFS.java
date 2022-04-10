@@ -20,7 +20,7 @@ public class Day62BOJ2667단지번호붙DFS {
 		pq = new PriorityQueue<>(); // 오름차순 출력을 위한 최소힙
 
 		for (int i = 0; i < N; i++) {
-			String st = br.readLine();
+			String st = br.readLine(); 
 			for (int j = 0; j < N; j++) {
 				map[i][j] = st.charAt(j) - 49; // 0 -> -1, 1 -> 0
 			}
