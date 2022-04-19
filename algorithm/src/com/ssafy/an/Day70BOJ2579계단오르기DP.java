@@ -22,7 +22,7 @@ public class Day70BOJ2579계단오르기DP { // 2579 계단 오르기 동적계�
 		// 3칸 연속 밟을 수 없으므로, 1, 3 또는 2, 3번칸을 밟아야 한다.
 		for (int i = 3; i < N + 1; i++)
 			dp[i] = Math.max(dp[i - 2], dp[i - 3] + arr[i - 1]) + arr[i];
-		
+
 		System.out.println(dp[N]);
 		br.close();
 	}
