@@ -10,21 +10,25 @@ public class Day82BOJ2225합분해DP { // 2225 합분해
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
-		K = sc.nextInt();  
-		dp = new Integer[N + 1][K + 1];
+		K = sc.nextInt();
+		dp = new Integer[K + 1][N + 1];
 
-		System.out.println(recur(N, K));
+		System.out.println(recur2(K, N));
 		sc.close();
 	}
 
-	private static int recur(int n, int k) { 
-		if (n == 0 || k == 1)
+	private static int recur(int k, int n) {
+		if (k == 1 || n == 0)
 			return 1;
-		if (dp[n][k] != null)
-			return dp[n][k];
-		return dp[n][k] = (recur(n - 1, k) + recur(n, k - 1)) % MOD;
+		if (dp[k][n] != null)
+			return dp[k][n];
+		return dp[k][n] = (recur(k - 1, n) + recur(k, n - 1)) % MOD;
 	}
 
+	private static int recur2(int k, int n) {
+		return dp[k][n] = (k == 1 || n == 0) ? 1
+				: ((dp[k][n] != null) ? dp[k][n] : (recur(k - 1, n) + recur(k, n - 1)) % MOD);
+	}
 }
 // 예제 1
 // 20 2
