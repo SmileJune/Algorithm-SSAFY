@@ -2,7 +2,7 @@ package com.ssafy.an;
 
 import java.util.Scanner;
 
-public class Day86BOJ11729타일1DP { // 11726 2xn 타일링
+public class Day86BOJ11726타일1DP { // 11726 2xn 타일링
 	static int N;
 	static Integer[] dp;
 
