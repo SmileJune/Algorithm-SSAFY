@@ -11,15 +11,14 @@ public class Day86BOJ11726타일1DP { // 11726 2xn 타일링
 		N = sc.nextInt();
 		dp = new Integer[N];
 		dp[0] = 1; // 2x1 칸일 때
-		if(N > 1) dp[1] = 2;
-		System.out.println(recur(N-1));
+		if (N > 1) dp[1] = 2;
+		System.out.println(recur(N - 1));
 		sc.close();
 	}
 
 	private static int recur(int n) {
-		if (dp[n] == null) {			
-			dp[n] = recur(n - 1) + recur(n - 2);
-		}
+		if (dp[n] == null) 
+			dp[n] = recur(n - 1) + recur(n - 2);		
 		return dp[n] %= 10007;
 	}
 }
