@@ -45,9 +45,11 @@ public class Day96BOJ14465지름길 { // 1446 지름길
 			if (node[i].size() > 0) 
 				for (Node n : node[i]) 
 					dist[n.e] = Math.min(dist[n.e], dist[i] + n.c);
-//			System.out.println(Arrays.toString(dist).replaceAll("[\\[\\],ull]", ""));
+			System.out.println(Arrays.toString(dist).replaceAll("[\\[\\],ull]", ""));
 		}
 		System.out.println(dist[D]);
 		br.close();
 	}
 }
+
+
