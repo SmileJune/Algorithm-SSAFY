@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Day99BOJ1027고층건물 {
-	static final int INF = 1_000_000_001;
+	static final int INF = 1_000_000_001;// 왜...? 최대값 오류가 나지?
 	static int N, ans, tmp;
 	static double l; // 기울기 tmp
 	static double[] arr; // 1_000_000_000, 접함을 구하려면
