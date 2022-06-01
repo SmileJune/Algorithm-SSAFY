@@ -37,7 +37,7 @@ public class Day114BOJ1092배ArrayList { // 1092 배
 				int idx = 0; // 이부분 구선생님 도움.. 원래 pq로 box 만들었는데,
 				for (int i = 0; i < N; i++) {
 					if (idx == box.size())
-						break; // for문 중에도 box가 모두 없어졌을 수 있다.
+						break; 
 					if (box.get(idx) <= crn.get(i))
 						box.remove(idx);
 					else {
