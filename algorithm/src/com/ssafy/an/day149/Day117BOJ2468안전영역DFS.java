@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Day117BOJ2468안전영역DFX { // 2468 안전영역
+public class Day117BOJ2468안전영역DFS { // 2468 안전영역
 	static int N, ans, max;
 	static int[] dr = { -1, 1, 0, 0 }, dc = { 0, 0, -1, 1 };
 	static int[][] map;
