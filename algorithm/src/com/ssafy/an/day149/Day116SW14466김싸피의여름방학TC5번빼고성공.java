@@ -164,15 +164,15 @@ public class Day116SW14466김싸피의여름방학TC5번빼고성공 { // 14466 
 		return r < 0 || c < 0 || r >= N || c >= M;
 	}
 
-	private static void print(int[][] a) {
-		StringBuilder tt = new StringBuilder();
-		tt.append("********* ********\n");
-		for (int i = 0; i < a.length; i++) {
-			for (int j = 0; j < a[i].length; j++) {
-				tt.append(a[i][j]).append(" ");
-			}
-			tt.append("\n");
-		}
-		System.out.print(tt);
-	}
+//	private static void print(int[][] a) {
+//		StringBuilder tt = new StringBuilder();
+//		tt.append("********* ********\n");
+//		for (int i = 0; i < a.length; i++) {
+//			for (int j = 0; j < a[i].length; j++) {
+//				tt.append(a[i][j]).append(" ");
+//			}
+//			tt.append("\n");
+//		}
+//		System.out.print(tt);
+//	}
 }
