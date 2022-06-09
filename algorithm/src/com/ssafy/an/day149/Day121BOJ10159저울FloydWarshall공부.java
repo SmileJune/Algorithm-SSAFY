@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Day121BOJ10159저울플로이드와샬공부 { // 10159 저울 플로이드 와샬
+public class Day121BOJ10159저울FloydWarshall공부 { // 10159 저울 플로이드 와샬
 	static int N, M;
 	static boolean[][] arr, rra;
 

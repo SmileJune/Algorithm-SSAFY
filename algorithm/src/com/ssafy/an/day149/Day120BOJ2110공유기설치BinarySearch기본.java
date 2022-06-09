@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Day120BOJ2110공유기설치이분탐색기본 { // 2110 공유기 설치
+public class Day120BOJ2110공유기설치BinarySearch기본 { // 2110 공유기 설치
 	static int N, M;
 	static int[] arr;
 
