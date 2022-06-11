@@ -2,7 +2,6 @@ package com.ssafy.an.day149;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Day115SW1865동철이일분배DP {

@@ -3,8 +3,6 @@ package com.ssafy.an.day149;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import java.io.BufferedReader;
-
 public class Day101BOJ10026적록색약DFS {
 	static int N;
 	static int[] ans, dr = { -1, 1, 0, 0 }, dc = { 0, 0, -1, 1 };
