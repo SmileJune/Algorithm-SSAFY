@@ -4,101 +4,96 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class BOJ_1939_중량제한 {
-	static class Node implements Comparable<Node> {
-		int v;
-		long weight;
+	static int N, M;
 
-		public Node(int v, long weight) {
+	static class Node {
+		int v, w;
+
+		public Node(int v, int w) {
 			this.v = v;
-			this.weight = weight;
-		}
-
-		@Override
-		public int compareTo(Node o) {
-			return Long.compare(this.weight, o.weight);
+			this.w = w;
 		}
 	}
 
-	static final long INF = Long.MAX_VALUE;
-	static int N, M;
-	static List<Node>[] adjList; // 인접 리스트
-	static boolean[] visible;// 와드 밝혀져있는지 알아보기 위해~
-	static long[] dist;
+// 그냥 중량제한이 c라는거지 그게 뭐 다른게 아님.. 그래서 ! 
+	static List<Node>[] adjList;
+	static int max, min, start, end;
+	static boolean[] visited;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		N = Integer.parseInt(st.nextToken()); // 0번부터 쓸거에요.
+		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
+		// 다음 m개 줄에는 다리에 대한 정보를 나타내는 세 정수 A, B, C,가 주어진다.
 
-		visible = new boolean[N];
-		st = new StringTokenizer(br.readLine());
-		for (int i = 0; i < N; ++i) {
-			visible[i] = Integer.parseInt(st.nextToken()) == 1 ? true : false;
-		}
-
-		adjList = new ArrayList[N];
-
-		for (int i = 0; i < N; i++) {
+		adjList = new ArrayList[N + 1];
+		for (int i = 1; i <= N; ++i) {
 			adjList[i] = new ArrayList<>();
 		}
+		max = 0;
+		min = Integer.MAX_VALUE;
 
-		dist = new long[N];
-		Arrays.fill(dist, INF);
-
-		// 간선 입력
-		for (int i = 0; i < M; i++) {
+		for (int i = 0; i < M; ++i) {
 			st = new StringTokenizer(br.readLine());
 			int s = Integer.parseInt(st.nextToken());
 			int e = Integer.parseInt(st.nextToken());
 			int w = Integer.parseInt(st.nextToken());
+			// 양방향이니까
 			adjList[s].add(new Node(e, w));
 			adjList[e].add(new Node(s, w));
+			max = Math.max(max, w);
+			min = Math.min(min, w);
 		}
 
-		dijkstra(0);
-		if (dist[N - 1] >= INF) {
-			System.out.println(-1);
-		} else {
-			System.out.println(dist[N - 1]);
-		}
+		st = new StringTokenizer(br.readLine());
+		start = Integer.parseInt(st.nextToken());
+		end = Integer.parseInt(st.nextToken());
+		binary();
 
 	}
 
-	static void dijkstra(int st) {
-		PriorityQueue<Node> pq = new PriorityQueue<>();
-		// 박문철2
-		boolean[] visited = new boolean[N];
+	private static void binary() {
+		int ans = 0;
+		while (min <= max) {
+			int mid = (min + max) / 2;
+			visited = new boolean[N + 1];
+			if (bfs(mid)) {
+				min = mid + 1;
+				ans = mid;
+			} else {
+				max = mid - 1;
+			}
+		}
 
-		pq.add(new Node(st, 0));
-		// 시작 노드까지의 거리는 0
-		dist[st] = 0;
+		System.out.println(ans);
+	}
 
-		while (!pq.isEmpty()) {
-			Node curr = pq.poll(); // 하나꺼내.
-
-			if (visited[curr.v])
-				continue;
-			visited[curr.v] = true; // 선택한걸로치고
-
-			// 뽑은 curr으로 부터 출발해서 도착할 수 있는 모든 정점들에 대하여
-			for (Node node : adjList[curr.v]) {
-				// 이미 알고 있는 거리보다 더 가깝게 도달 할 수 있다면
-				if (!visited[node.v] && dist[node.v] > dist[curr.v] + node.weight) {
-					if (!visible[node.v] || node.v == N - 1) {
-						dist[node.v] = dist[curr.v] + node.weight;
-						pq.add(new Node(node.v, dist[node.v]));
-					}
+	// 걍 되나 안되나만 보는거잖어.
+	private static boolean bfs(int mid) {
+		Queue<Integer> q = new LinkedList<>();
+		q.add(start);
+		visited[start] = true;
+		while (!q.isEmpty()) {
+			int now = q.poll();
+			if (now == end) {
+				return true; // 일단 여기까지 올수는 있는거다. 그냥 올수만 있으면 true를 반환해준다.
+			}
+			for (Node node : adjList[now]) {
+				if (node.w >= mid && !visited[node.v]) {
+					// 만약에 방문하지않았으면. // 방문했으면 찾을 필요는 없으니까.
+					visited[node.v] = true;
+					q.add(node.v);
 				}
 			}
-
 		}
-
+		return false;
 	}
+
 }
