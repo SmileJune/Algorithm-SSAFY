@@ -18,7 +18,7 @@ public class Day175BOJ1115순열 {
 			if (v[i])
 				continue;
 			cnt++;
-			int s = i;
+			int s = i; 
 			while (!v[s]) {
 				v[s] = true;
 				s = arr[s];
