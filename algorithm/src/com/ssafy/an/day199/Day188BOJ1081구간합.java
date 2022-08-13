@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Day188BOJ10810구간합 { // 1081 합 구간합
+public class Day188BOJ1081구간합 { // 1081 합 구간합
 	static long L, U;
 	static long[] cnt;
 
