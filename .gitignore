@@ -1,3 +1,4 @@
 /.metadata/
 /.recommenders/
 algorithm/.gitignore
+algorithm/src/com/ssafy/an/.vscode/tasks.json
